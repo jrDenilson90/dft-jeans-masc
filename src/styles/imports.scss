@@ -1,0 +1,7 @@
+// @use 'import scss templates';
+// @use './../views/templates/teste/style.scss' as templateTeste;
+
+// @use 'import scss components';
+// @use './../views/components/teste/style.scss' as componentTeste;
+@use './../views/components/welcome/style.scss' as componentGifImg;
+@use './../views/components/lineImage/style.scss' as componentLineImage;

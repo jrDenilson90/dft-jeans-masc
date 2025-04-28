@@ -1,0 +1,86 @@
+include views/imports
+
+doctype html
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Estrutura Dafiti
+        link(rel="stylesheet" href="styles/main.css")
+        //- link(rel="stylesheet", href="external/style.css")
+
+    body(style="box-sizing: border-box; margin: 0; padding: 0;")
+        .dafitiStructure
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+            +component-welcome([
+                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_32_download.png',
+                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_33_download_(1).png',
+                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_35_download_(2).png',
+                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_36_download_(3).png',
+                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_37_download_(4).png',
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxsVWwqRNvAk7bCP2lPtpKHc3T5btLzn_-A&s'
+            ])
+
+            +component-lineImage([
+                { 
+                    link: 'http://link1.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/onsite/2024/2024_12_06_17_58_13_banner-desktop.png',
+                    alt: 'Descrição da imagem'
+                }
+            ])
+
+            +component-lineImage([
+                { 
+                    link: 'http://link1.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_58_963x634-A.png',
+                    alt: 'Descrição da imagem'
+                },
+                { 
+                    link: 'http://link2.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_16_01_963x634-B.png',
+                    alt: 'Descrição da imagem'
+                }
+            ])
+
+            +component-lineImage([
+                { 
+                    link: 'http://link1.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_56_963x634-C.png',
+                    alt: 'Descrição da imagem'
+                },
+                { 
+                    link: 'http://link2.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_53_963x634-D.png',
+                    alt: 'Descrição da imagem' 
+                }
+            ])
+
+            +component-lineImage([
+                { 
+                    link: 'http://link1.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_51_471x471-A.png',
+                    alt: 'Descrição da imagem' 
+                },
+                { 
+                    link: 'http://link2.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_49_471x471-B.png',
+                    alt: 'Descrição da imagem'
+                },
+                { 
+                    link: 'http://link3.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_46_471x471-C.png',
+                    alt: 'Descrição da imagem' 
+                },
+                { 
+                    link: 'http://link4.com', 
+                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_44_471x471-D.png',
+                    alt: 'Descrição da imagem'
+                },
+            ])
+
+
+    //- script(src="external/scripts.js")
+    script(src="js/main.js")

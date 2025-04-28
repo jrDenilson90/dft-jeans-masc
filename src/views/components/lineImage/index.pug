@@ -1,0 +1,5 @@
+mixin component-lineImage(pairs)
+    .container-lineImage
+        each pair in pairs
+            a(href=pair.link, target="_blank", rel="noopener noreferrer") 
+                img(src=pair.image, alt=pair.alt, class='image')
