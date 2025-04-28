@@ -1,6 +1,7 @@
-@use './../styles/imports.scss' as templateTeste;
+@use './../styles/imports.scss' as imports;
+@use './../styles/fonts.scss' as fonts;
 
-.dafitiStructure * {
+.dafitiStructure {
     margin: 0;
     padding: 0;
     box-sizing: border-box;

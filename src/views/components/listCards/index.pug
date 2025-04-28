@@ -1,0 +1,9 @@
+mixin listCards(infos)
+    p.textColor.poppins-light os melhores jeans estão aqui na dafiti! <span class="poppins-semibold">ENCONTRE O SEU :)</span>
+    .listCards
+        each info in infos
+            a.card(href=info.link, rel="noopener noreferrer")
+                .img
+                    img(src=info.img, alt=info.text)
+                .boxText
+                    p.text.baskervville-regular= info.text

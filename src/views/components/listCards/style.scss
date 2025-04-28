@@ -1,0 +1,99 @@
+.textColor {
+    text-align: center;
+    padding: 0 1vw;
+    text-transform: lowercase;
+    color: #60191E;
+    font-size: 1vw;
+    margin: .7vw 0;
+    span {
+        text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+        font-size: 3.2vw;
+        margin: 1.5vw 0;
+    }
+}
+
+.listCards {
+    display: flex;
+    justify-content: center;
+    background-color: #AE8B6F;
+    padding: 2vw 1vw;
+    gap: 2.2vw;
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+        padding: 5vw 2vw;
+        overflow: auto;
+    }
+
+    .card {
+        width: 13.5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        text-decoration: none;
+        border-radius: 2vw;
+        overflow: hidden;
+        @media (max-width: 768px) {
+            width: 37vw;
+            overflow: initial;
+        }
+
+        .img {
+            width: 100%;
+            overflow: hidden;
+            @media (max-width: 768px) {
+                border-radius: 6vw 6vw 0 0;
+                overflow: hidden;
+            }
+            img {
+                transition-duration: .3s;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .boxText {
+            transition-duration: .3s;
+            background-color: #60191E;
+            width: 100%;
+            height: 2.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 768px) {
+                width: 37vw;
+                height: auto;
+                border-radius: 0 0 6vw 6vw;
+                overflow: hidden;
+            }
+
+            .text {
+                font-size: 1.1vw;
+                text-align: center;
+                margin: 0;
+                color: #ffffff;
+                @media (max-width: 768px) {
+                    padding: 1vw;
+                    font-size: 4vw;
+                    margin: 1vw 0;
+                }
+            }
+        }
+
+        &:hover {
+            .img {
+                img {
+                    transform: scale(1.03);
+                }
+            }
+            .boxText {
+                background-color: #ffffff;
+                .text {
+                    color: #60191E;
+                }
+            }
+        }
+    }
+}

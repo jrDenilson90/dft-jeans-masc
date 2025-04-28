@@ -1,0 +1,6 @@
+mixin listInfos(infos)
+    .listInfos
+        each info in infos
+            .line
+                img(src=info.img, alt=info.text)
+                p.text.poppins-regular= info.text

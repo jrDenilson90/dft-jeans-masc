@@ -15,72 +15,92 @@ html(lang="pt-br")
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-            +component-welcome([
-                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_32_download.png',
-                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_33_download_(1).png',
-                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_35_download_(2).png',
-                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_36_download_(3).png',
-                'https://dafitistatic.dafiti.com.br/cms/2025_04_04_17_22_37_download_(4).png',
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvxsVWwqRNvAk7bCP2lPtpKHc3T5btLzn_-A&s'
-            ])
+            +linkImage(
+                'https://www.dafiti.com.br/promocao/masculino/jeans-geral/',
+                [{
+                    srcDesk: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_43_Banner_DESK.png',
+                    srcMob: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_40_Banner_MSITE.png'
+                }],
+                'Descrição'
+            )
 
-            +component-lineImage([
-                { 
-                    link: 'http://link1.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/onsite/2024/2024_12_06_17_58_13_banner-desktop.png',
-                    alt: 'Descrição da imagem'
-                }
-            ])
+            +dashed-text('o seu corpo, no seu jeans.')
 
-            +component-lineImage([
-                { 
-                    link: 'http://link1.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_58_963x634-A.png',
-                    alt: 'Descrição da imagem'
-                },
-                { 
-                    link: 'http://link2.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_16_01_963x634-B.png',
-                    alt: 'Descrição da imagem'
-                }
-            ])
+            +listInfos(
+                [
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/1b77716aa3d33__icon-frete-gratis.svg',
+                        text: 'Frete grátis*'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/f5965fda82c__icon-troca-gratis.svg',
+                        text: 'Troca grátis'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/33b9ca606c3e9__icon.svg',
+                        text: 'Coleta para trocas'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_58_48_33b9ca606c3e9__icon.svg',
+                        text: 'Descontos'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_58_47_2130b30554cb4__icon-ate-6x-sem-juros.svg',
+                        text: 'Marcas exclusivas'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/2130b30554cb4__icon-ate-6x-sem-juros.svg',
+                        text: 'Até 8x sem juros'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/b14a378ac89c__union.svg',
+                        text: 'Entrega rápida'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/247a0f56fef9b__icon-excelente-atendimento.svg',
+                        text: 'Excelente atendimento'
+                    },
+                    {
+                        img: 'https://dafitistatic.dafiti.com.br/dynamic_yield/cms/static/dafiti/images/1e3b02903cd00__eco.png',
+                        text: 'Moda Sustentável'
+                    }
+                ]
+            )
 
-            +component-lineImage([
-                { 
-                    link: 'http://link1.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_56_963x634-C.png',
-                    alt: 'Descrição da imagem'
-                },
-                { 
-                    link: 'http://link2.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_53_963x634-D.png',
-                    alt: 'Descrição da imagem' 
-                }
-            ])
-
-            +component-lineImage([
-                { 
-                    link: 'http://link1.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_51_471x471-A.png',
-                    alt: 'Descrição da imagem' 
-                },
-                { 
-                    link: 'http://link2.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_49_471x471-B.png',
-                    alt: 'Descrição da imagem'
-                },
-                { 
-                    link: 'http://link3.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_46_471x471-C.png',
-                    alt: 'Descrição da imagem' 
-                },
-                { 
-                    link: 'http://link4.com', 
-                    image: 'https://dafitistatic.dafiti.com.br/cms/loja-nike/2024_11_05_10_08_44_471x471-D.png',
-                    alt: 'Descrição da imagem'
-                },
-            ])
-
+            +listCards(
+                [
+                    {
+                        link: 'https://www.dafiti.com.br/promocao/masculino/jeans-slim/',
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_37_Slim.png',
+                        text: 'Slim'
+                    },
+                    {
+                        link: 'https://www.dafiti.com.br/promocao/masculino/jeans-skinny/',
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_35_Skinny.png',
+                        text: 'Skinny'
+                    },
+                    {
+                        link: 'https://www.dafiti.com.br/promocao/masculino/jeans-reta/',
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_33_Reta.png',
+                        text: 'Reta'
+                    },
+                    {
+                        link: 'https://www.dafiti.com.br/promocao/masculino/jeans-chino/',
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_30_Chino.png',
+                        text: 'Chino'
+                    },
+                    {
+                        link: 'https://www.dafiti.com.br/promocao/masculino/jeans-sarja/',
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_26_Sarja.png',
+                        text: 'Sarja'
+                    },
+                    {
+                        link: 'https://www.dafiti.com.br/promocao/masculino/jeans-cargo/',
+                        img: 'https://dafitistatic.dafiti.com.br/cms/2025_04_28_10_00_23_Cargo.png',
+                        text: 'Cargo'
+                    },
+                ]
+            )
 
     //- script(src="external/scripts.js")
     script(src="js/main.js")

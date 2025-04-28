@@ -2,6 +2,7 @@
 // @use './../views/templates/teste/style.scss' as templateTeste;
 
 // @use 'import scss components';
-// @use './../views/components/teste/style.scss' as componentTeste;
-@use './../views/components/welcome/style.scss' as componentGifImg;
-@use './../views/components/lineImage/style.scss' as componentLineImage;
+@use './../views/components/linkImage/style.scss' as componentLinkImage;
+@use './../views/components/dashed-text/style.scss' as componentDashedText;
+@use './../views/components/listInfos/style.scss' as componentListInfos;
+@use './../views/components/listCards/style.scss' as componentListCards;

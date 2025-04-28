@@ -1,0 +1,5 @@
+mixin linkImage(link, images, alt)
+    each image in images
+        a.linkImage(href=link, rel="noopener noreferrer") 
+            img.imgDesk(src=image.srcDesk, alt=alt)
+            img.imgMob(src=image.srcMob, alt=alt)

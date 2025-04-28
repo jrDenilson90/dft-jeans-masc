@@ -1,0 +1,28 @@
+.dashed-text {
+    display: flex;
+    align-items: center;
+    padding: .2vw 0 .5vw;
+    .dashed {
+        width: calc(100vw - 30vw);
+        height: .2vw;
+        object-fit: cover;
+        margin-top: .2vw;
+        @media (max-width: 768px) {
+            width: 18vw;
+            height: .6vw;
+            margin-top: .3vw;
+        }
+    }
+    .text {
+        width: 28vw;
+        padding: 0 .5rem;
+        font-size: 2vw;
+        color: #60191E;
+        margin: 0;
+        text-align: center;
+        @media (max-width: 768px) {
+            width: 80vw;
+            font-size: 6vw;
+        }
+    }
+}
