@@ -1,5 +1,5 @@
-mixin linkImage(link, images, alt)
+mixin linkImage(link, images, alt, dataCreative)
     each image in images
         a.linkImage.btn_ga_click(href=link, rel="noopener noreferrer" onclick="sendClickEventGA(this)") 
-            img.imgDesk(src=image.srcDesk, alt=alt)
-            img.imgMob(src=image.srcMob, alt=alt)
+            img.imgDesk.img_ga_view(src=image.srcDesk, alt=alt, data-creative=dataCreative)
+            img.imgMob.img_ga_view(src=image.srcMob, alt=alt, data-creative=dataCreative)

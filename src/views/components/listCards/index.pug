@@ -4,6 +4,6 @@ mixin listCards(infos)
         each info in infos
             a.card.btn_ga_click(href=info.link, rel="noopener noreferrer" onclick="sendClickEventGA(this)")
                 .img
-                    img(src=info.img, alt=info.text)
+                    img.img_ga_view(src=info.img, alt=info.text, data-creative=info.dataCreative)
                 .boxText
                     p.text.baskervville-regular= info.text
