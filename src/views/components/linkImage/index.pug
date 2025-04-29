@@ -1,5 +1,5 @@
 mixin linkImage(link, images, alt)
     each image in images
-        a.linkImage(href=link, rel="noopener noreferrer") 
+        a.linkImage.btn_ga_click(href=link, rel="noopener noreferrer" onclick="sendClickEventGA(this)") 
             img.imgDesk(src=image.srcDesk, alt=alt)
             img.imgMob(src=image.srcMob, alt=alt)
